@@ -1,0 +1,544 @@
+body {
+    color: #f2fdf2;
+    background-color: #0d0d0d;
+    font-family: "Roboto", sans-serif;
+}
+
+body::selection {
+    background-color: #bf84ff55;
+    color: #1a1a1a;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #1a1a1a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    z-index: 10000;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-right: 200px;
+    font-size: 20px;
+    font-size: 1.5vw;
+}
+
+.menu-btn {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.title {
+    color: #c084ff;
+    font-size: 3vw;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #bf84ffbb;
+}
+
+.title:hover {
+    text-shadow: 0 0 7px #bf84ffbb;
+}
+
+.title:active {
+    text-shadow: 0 0 7px #bf84ffbb;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f3f233;
+    transition: color 0.7s;
+}
+
+nav ul li a:hover {
+    color: #c084ff;
+}
+
+nav ul li a:active {
+    color: #c084ff;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: white;
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+
+}
+
+.hi {
+    display: inline-block;
+    padding: 50px;
+}
+
+.hi1 {
+    font-size: 7vw;
+    color: #f2fdf2;
+    margin: 0;
+    text-shadow: 0 0 10px #bf84ffbb;
+}
+
+.hi2 {
+    font-size: 7vw;
+    color: #c084ff;
+    margin: 0;
+}
+
+.hi2 span {
+    color: #f2fdf2;
+    text-shadow: 0 0 10px #bf84ffbb;
+}
+
+.hi3 {
+    font-size: 3.5vw;
+    color: #f2fdf2;
+    margin: 0;
+}
+
+.DowCV {
+    justify-self: end;
+    padding: 4%;
+    width: 14vw;
+}
+
+.DowCV a button {
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+    border-radius: 25vw;
+    padding: 10%;
+    transition: 0.3s;
+    border: none;
+}
+
+.DowCV a button:hover {
+    transform: translateY(-7px);
+}
+
+.DowCV a button:active {
+    transform: translateY(-7px);
+}
+
+.DowCV a button p {
+    color: #0d0d0d;
+}
+
+.DowCV a i {
+    font-size: 1.8vw;
+}
+
+.DowCV a span {
+    font-size: 1.6vw;
+}
+
+.Me {
+    color: #c084ff;
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #bf84ffbb;
+    display: flex;
+    justify-content: center;
+}
+
+.Me:hover {
+    text-shadow: 0 0 7px #bf84ffbb;
+}
+
+#about {
+    min-height: auto;
+}
+
+#about .DivAbout {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    /* border: 3px solid #bf84ff;*/
+
+    border-radius: 5px;
+    padding: 1vw;
+    transition: 0.3s;
+    width: 80%;
+    justify-self: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 4vw;
+    background-color: #1a1a1ae3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#about .DivAbout:hover {
+    transform: translateY(-10px);
+    background-color: #1a1a1a79;
+    box-shadow: 0 0 15px #bf84ff88;
+    border: 2px solid #bf84ff;
+}
+
+#about .DivAbout:active {
+    transform: translateY(-10px);
+    background-color: #1a1a1a79;
+    box-shadow: 0 0 15px #bf84ff88;
+    border: 2px solid #bf84ff;
+}
+
+.line2 {
+    background-color: #f2fdf2;
+    width: 1vw;
+}
+
+.DivAbout i {
+    font-size: 5vw;
+    padding-top: 1.5vw;
+    transition: 0.3s;
+}
+
+.DivAbout i:hover {
+    transform: translateY(-10px);
+}
+
+.DivAbout i:active {
+    transform: translateY(-10px);
+}
+
+.skillsUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+    padding: 0;
+    font-size: 50px;
+}
+
+.skillsUl li {
+    box-shadow: 0 0 15px #bf84ff64;
+    border: 2px solid #bf84ff64;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    border-radius: 5px;
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skillsUl li>* {
+    align-self: center;
+    text-align: center;
+}
+
+.skillsUl li:hover {
+    background-color: #1a1a1a79;
+    box-shadow: 0 0 15px #bf84ff88;
+
+}
+
+.skillsUl li:active {
+    background-color: #1a1a1a79;
+    box-shadow: 0 0 15px #bf84ff88;
+
+}
+
+.skillsUl li.aos-animate {
+    transition: 0.3s !important;
+}
+
+.skillsUl li.aos-animate:hover,
+.skillsUl li.aos-animate:active,
+.skillsUl li[data-aos].aos-animate:hover,
+.skillsUl li[data-aos].aos-animate:active {
+    transform: translateY(-10px) !important;
+}
+
+.skillsUl p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.project1 {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 50vw;
+    border: 2px solid #bf84ff;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: translateY(-10px);
+    opacity: 0.5;
+}
+
+img:active {
+    transform: translateY(-10px);
+    opacity: 0.5;
+}
+
+.line {
+    width: 4px;
+    background-color: #f2fdf2;
+}
+
+.descr {
+    font-size: 2.5vw;
+}
+
+.Cnt {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+    padding: 0;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.Cnt li {
+    transition: 0.3s;
+}
+
+.Cnt li:hover {
+    transform: translateY(-7px);
+}
+
+.Cnt li:active {
+    transform: translateY(-7px);
+}
+
+.PhN {
+    gap: 18px;
+    font-size: 16px;
+}
+
+#contact .div1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+#contact .div1 .div2 {
+    border: 2px solid #bf84ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.EnterName,
+.EnterEmail {
+    background-color: #1a1a1a;
+    width: 98%;
+    height: 40px;
+    border: 1px solid #f2fdf2;
+    border-radius: 5px;
+}
+
+textarea {
+    background-color: #1a1a1a;
+    width: 98%;
+    min-height: 100px;
+    border: 1px solid #f2fdf2;
+    border-radius: 5px;
+}
+
+form button {
+    width: 20%;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 25vw;
+    padding: 5%;
+    transition: 0.3s;
+    border: none;
+}
+
+form button.aos-animate {
+    transition: 0.3s !important;
+}
+
+form button.aos-animate:hover,
+form button.aos-animate:active,
+form button[data-aos].aos-animate:hover,
+form button[data-aos].aos-animate:active {
+    transform: translateY(-5px) !important;
+}
+
+#sendEmail p {
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+    color: #f2fdf2;
+}
+
+textarea {
+    padding-top: 10px;
+}
+
+button[type="submit"] {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #1a1a1aba;
+    color: #f2fdf2;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+}
+
+@media(max-width:768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #1a1a1a;
+        font-size: 20px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 15px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-right: 70px;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .hi {
+
+        padding: 50px;
+    }
+
+    .hi1 {
+        font-size: 10vw;
+        margin-top: 10px;
+    }
+
+    .hi2 {
+        font-size: 10vw;
+        margin-bottom: 10px;
+    }
+
+    .hi3 {
+        font-size: 7vw;
+        margin: 0;
+    }
+
+    .DowCV {
+        padding: 4%;
+        width: 30vw;
+    }
+
+    .DowCV a button {
+        display: flex;
+        gap: 3vw;
+        padding: 10px;
+    }
+
+    .DowCV a i {
+        font-size: 15px;
+    }
+
+    .DowCV a span {
+        font-size: 15px;
+    }
+
+    #about .DivAbout,
+    .PhN {
+        font-weight: 200;
+    }
+    .Cnt {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    justify-content: center;
+    }
+    .project1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .descr {
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    img {
+        width: 320px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
