@@ -32,7 +32,19 @@ var typed = new Typed("#myText", {
 });
 var typed2 = new Typed("#myText2", {
     strings: [
-        "This is my first and current portfolio website, created to showcase my skills and projects. It represents the starting point of my web development journey, and I plan to expand it with more projects in the future.",
+        "My portfolio website showcases my skills and projects in web development. Built with HTML, CSS, and JavaScript, it reflects my creativity and passion for creating modern and responsive websites, while continuously evolving with new projects and improvements.",
+        "Click the image to visit the project on GitHub"
+    ],
+    typeSpeed: 40,
+    backSpeed: 10,
+    backDelay: 400,
+    loop: true
+
+});
+
+var typed3 = new Typed("#myText3", {
+    strings: [
+        "The official website of Rawasii provides an overview of the application, download access, and a user guide to help users explore its features and use it effectively. Built using HTML and CSS with a modern and responsive design for a smooth user experience across devices.",
         "Click the image to visit the project on GitHub"
     ],
     typeSpeed: 40,
