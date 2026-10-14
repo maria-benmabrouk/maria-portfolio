@@ -539,6 +539,17 @@ footer{
     }
 
 }
-
-
-
+.project_title{
+    margin-top: 50px;
+    font-size: 2vw;
+}
+@media (max-width:700px) {
+    .project_title{
+    font-size: 4vw;
+}
+}
+@media (max-width:500px) {
+    .project_title{
+    font-size: 7vw;
+}
+}
