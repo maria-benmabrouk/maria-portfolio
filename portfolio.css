@@ -431,6 +431,8 @@ footer{
     text-align: center;
     font-size: 14px;
     padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f2fdf2;
 }
 
 @media(max-width:768px) {
